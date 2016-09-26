@@ -1,0 +1,5 @@
+---
+# tasks file for root_user
+- authorized_key:
+    user: root
+    key: "{{ root_user-ssh_key }}"
