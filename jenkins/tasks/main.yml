@@ -1,2 +1,8 @@
+# Setup the Yum Repo
 - include: repo.yml
+
+# Install the Jenkins Package
 - include: package.yml
+
+# Run the Jenkins Service
+- include: service.yml
