@@ -3,3 +3,4 @@
 - authorized_key:
     user: root
     key: "{{ root_user_ssh_key }}"
+    become: true
