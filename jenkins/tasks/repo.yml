@@ -1,0 +1,9 @@
+- name: Setup Jenkins Repo
+  get_url:
+    url: "{{ jenkins_repo_url }}"
+    dest: /etc/yum.repos.d/jenkins.repo
+
+- name: Setup Jenkins repo key
+  rpm_key:
+    state: present
+    key: "{{ jenkins_repo_key }}"
